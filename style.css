@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+.footer {
+  margin-top: 30px;
+  width: 100%;
+  background-color: #0b3c5d;
+  color: #bbb;
+  text-align: center;
+  display: block;
+}
+.footer p {
+  margin: 0;
+  padding: 1em;
+}
+
+.grid {
+  max-width: 1140px;
+  margin: auto;
+}
+
+[class*="col-"] {
+  position: relative;
+  float: left;
+  min-height: 1px;
+  width: 100%;
+  padding: 1em;
+}
+
+.col-1-4 {
+  width: 25%;
+}
+
+.row::before,
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sidenav {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.sidenav a {
+  display: block;
+  color: #000;
+  padding: .25em;
+  text-decoration: none;
+}
+.sidenav .active {
+  background-color: #faad08;
+  color: white;
+}
+.sidenav a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+body {
+  background-color: #328cc1;
+  margin: 0;
+  padding: 0;
+  font-size: 1.15em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Verdana, sans-serif;
+}
+
+.header {
+  width: 100%;
+  background-color: #0b3c5d;
+  margin-bottom: 30px;
+  display: block;
+}
+.header h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+  color: #fff;
+  text-align: center;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .col-1-4 {
+    width: 25%;
+  }
+  .sidenav {
+    height: auto;
+    position: relative;
+}
+.sidenav a {
+    float: left;
+    padding: .25em;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .col-1-4 {
+    width: 50%;
+  }
+  .sidenav {
+    height: auto;
+    position: relative;
+}
+.sidenav a {
+    float: left;
+    padding: relative;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .col-1-4 {
+    width: 100%;
+  }
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.sidenav a {
+    float: left;
+    padding: relative;
+}
+
+
+@media (min-width: 20em) and (max-width: 30em) {
+  .col-1-4 {
+    width: 100%;
+  }
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.sidenav a {
+    float: left;
+    padding: relative;
+}
+  
+}
